@@ -1,4 +1,4 @@
-# National Exams of Georgia: Data Automation and Analysis
+# NAEC Analyzer - Analyzing National Exam Historical Data For Predictive Insights
 
 ## Overview
 
