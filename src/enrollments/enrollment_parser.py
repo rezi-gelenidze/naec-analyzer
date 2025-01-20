@@ -48,7 +48,13 @@ def main():
         print("No data extracted from PDFs. Exiting.")
         return
 
-    # TODO save data to database (+ as CSV for backup)
+    # Save extracted data to a CSV file for backup
+    df = pd.DataFrame(data)
+    csv_path = os.path.join(config.DATA_DIR, "enrollment_data_backup.csv")
+    df.to_csv(csv_path, index=False)
+
+    # Finally, save the extracted data to the database
+    api.batch_insert_enrollment_records(data)
 
 if __name__ == "__main__":
     main()
