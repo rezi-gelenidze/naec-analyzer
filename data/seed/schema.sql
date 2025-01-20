@@ -29,7 +29,7 @@ CREATE TABLE IF NOT EXISTS university
 
 CREATE TABLE IF NOT EXISTS faculty
 (
-    id            CHAR(8) PRIMARY KEY,                             -- The ID of the faculty is an 8-character string.
+    id            CHAR(11) PRIMARY KEY,                             -- The ID of the faculty is an 8-character string.
     name          VARCHAR(511) NOT NULL,                           -- The name of the faculty.
     university_id CHAR(3)      NOT NULL,                           -- FK to the university table.
     FOREIGN KEY (university_id) REFERENCES university (id)
@@ -39,7 +39,7 @@ CREATE TABLE IF NOT EXISTS faculty
 CREATE TABLE IF NOT EXISTS enrollment
 (
     student_id    CHAR(9) PRIMARY KEY, -- Each student can only enroll once. Same person on different years will have different student IDs.
-    faculty_id    CHAR(8) NOT NULL,   -- FK to the faculty table.
+    faculty_id    CHAR(11) NOT NULL,   -- FK to the faculty table.
     contest_score FLOAT   NOT NULL,
     rank          INTEGER NOT NULL,
     year          INTEGER NOT NULL,
