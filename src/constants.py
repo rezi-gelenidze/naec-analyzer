@@ -11,5 +11,7 @@ SUBJECTS_KA_TO_EN_MAPPING = {
     "ლიტერატურა": "LITERATURE",
     "ხელოვნება": "ART",
     "სამოქალაქო განათლება": "CIVICS",
-    "ზოგადი უნარები": "GENERAL APTITUDE"
+    "ზოგადი უნარები": "GENERAL APTITUDE",
+    "ქართული ენა": "GEORGIAN LANGUAGE",
+    "უცხოური ენა": "FOREIGN LANGUAGE"
 }

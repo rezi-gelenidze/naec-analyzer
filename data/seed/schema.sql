@@ -15,7 +15,10 @@ VALUES ('MATHEMATICS'),
        ('LITERATURE'),
        ('ART'),
        ('CIVICS'),
-       ('GENERAL APTITUDE');
+       ('GENERAL APTITUDE'),
+       -- Mandatory non-grant subjects.
+       ('GEORGIAN LANGUAGE'),
+       ('FOREIGN LANGUAGE');
 
 -- Tables for university and faculty information.
 CREATE TABLE IF NOT EXISTS university
