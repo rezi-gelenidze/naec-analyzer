@@ -25,12 +25,6 @@ def pdf_to_string(pdf_filename):
 
             result += string_content
 
-            # Break after processing 10 pages TEMPORARY TODO
-
-        #save as txt
-        with open('pdf_content.txt', 'w') as f:
-            f.write(result)
-
         return result
 
 
